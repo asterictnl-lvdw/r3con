@@ -28,10 +28,10 @@ echo "export PATH=$GOPATH/bin:$GOROOT/bin:$PATH" >> ~/.bashrc
 source ~/.bashrc
 
 echo -e "${CYAN}Installing Cargo\n\n${NORMAL}"
-sudo apt install cargo
+sudo apt install -y cargo 
 
 echo -e "${CYAN}Installing html2text\n\n${NORMAL}"
-sudo apt install html2text
+sudo apt install -y html2text 
 
 echo -e "${BOLD}${MAGENTA}Installing repositories\n${NORMAL}"
 cd $HOME
@@ -121,50 +121,50 @@ cd ..
 echo -e "${BOLD}${MAGENTA}Installing tools\n${NORMAL}"
 
 echo -e "${CYAN}Installing WhatWeb\n\n${NORMAL}"
-sudo apt-get install whatweb
+sudo apt-get install -y whatweb
 
 echo -e "${CYAN}Installing TheHarvester\n\n${NORMAL}"
-sudo apt-get install theharvester
+sudo apt-get install -y theharvester
 
 echo -e "${CYAN}Installing Nmap\n\n${NORMAL}"
-sudo apt-get install nmap
+sudo apt-get install -y nmap
 
 echo -e "${CYAN}Installing Dirsearch\n\n${NORMAL}"
-sudo apt-get install dirsearch
+sudo apt-get install -y dirsearch
 
 echo -e "${CYAN}Installing SqlMap\n\n${NORMAL}"
-sudo apt-get install sqlmap 
+sudo apt-get install -y sqlmap 
 
 echo -e "${CYAN}Installing Amass\n${NORMAL}"
 go install -v github.com/OWASP/Amass/v3/...@master
 sudo cp ~/go/bin/amass /usr/local/bin 
 
 echo -e "${CYAN}Installing Aquatone\n${NORMAL}"
-go install github.com/michenriksen/aquatone@latest
+go install -v github.com/michenriksen/aquatone@latest
 sudo cp ~/go/bin/aquatone /usr/local/bin 
 
 echo -e "${CYAN}Installing Subfinder\n${NORMAL}"
-go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 sudo cp ~/go/bin/subfinder /usr/local/bin 
 
 echo -e "${CYAN}Installing Hakrawler\n${NORMAL}"
-go install github.com/hakluke/hakrawler@latest
+go install -v github.com/hakluke/hakrawler@latest
 sudo cp ~/go/bin/hakrawler /usr/local/bin 
 
 echo -e "${CYAN}Installing anew\n${NORMAL}"
-go install github.com/tomnomnom/anew@latest
+go install -v github.com/tomnomnom/anew@latest
 sudo cp ~/go/bin/anew /usr/local/bin 
 
 echo -e "${CYAN}Installing HTTPX\n${NORMAL}"
-go install github.com/projectdiscovery/httpx/cmd/httpx@latest
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 sudo cp ~/go/bin/httpx /usr/local/bin
 
 echo -e "${CYAN}Installing Notify\n${NORMAL}"
-go install github.com/projectdiscovery/notify/cmd/notify@latest
+go install -v github.com/projectdiscovery/notify/cmd/notify@latest
 sudo cp ~/go/bin/notify /usr/local/bin
 
 echo -e "${CYAN}Installing Nuclei\n${NORMAL}"
-go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 sudo cp ~/go/bin/nuclei /usr/local/bin
 
 echo -e "${CYAN}Installing Shcheck\n${NORMAL}"
@@ -174,30 +174,30 @@ echo -e "${CYAN}Installing MailSpoof\n${NORMAL}"
 pip3 install mailspoof
 
 echo -e "${CYAN}Installing MailSpoof\n${NORMAL}"
-go install github.com/haccer/subjack@install
+go install -v github.com/haccer/subjack@install
 sudo cp ~/go/bin/subjack /usr/local/bin
 
 echo -e "${CYAN}Installing gau\n${NORMAL}"
-go install github.com/lc/gau@latest
+go install -v github.com/lc/gau@latest
 sudo cp ~/go/bin/gau /usr/local/bin
 
 echo -e "${CYAN}Installing gf\n${NORMAL}"
-go install -u github.com/tomnomnom/gf@latest
+go install -v github.com/tomnomnom/gf@latest
 echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
 cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
 sudo cp ~/go/bin/gf /usr/local/bin
 
 echo -e "${CYAN}Installing qsreplace\n${NORMAL}"
-go install github.com/tomnomnom/qsreplace@latest
+go install -v github.com/tomnomnom/qsreplace@latest
 sudo cp ~/go/bin/qsreplace /usr/local/bin
 
 echo -e "${CYAN}Installing Dalfox\n${NORMAL}"
-go install github.com/hahwul/dalfox/v2@latest
+go install -v github.com/hahwul/dalfox/v2@latest
 sudo cp ~/go/bin/dalfox /usr/local/bin
 
 echo -e "${CYAN}Installing html-tool\n${NORMAL}"
-go install github.com/tomnomnom/hacks/html-tool@latest
+go install -v github.com/tomnomnom/hacks/html-tool@latest
 sudo cp ~/go/bin/html-tool /usr/local/bin
 
 echo -e "${CYAN}Installing waybackurls\n${NORMAL}"
-go install github.com/tomnomnom/waybackurls@latest
+go install -v github.com/tomnomnom/waybackurls@latest
