@@ -136,15 +136,15 @@ echo -e "${CYAN}Installing SqlMap\n\n${NORMAL}"
 sudo apt-get install sqlmap 
 
 echo -e "${CYAN}Installing Amass\n${NORMAL}"
-go get -v github.com/OWASP/Amass/v3/..
+go install -v github.com/OWASP/Amass/v3/...@master
 sudo cp ~/go/bin/amass /usr/local/bin 
 
 echo -e "${CYAN}Installing Aquatone\n${NORMAL}"
-go get -u github.com/michenriksen/aquatone
+go install github.com/michenriksen/aquatone@latest
 sudo cp ~/go/bin/aquatone /usr/local/bin 
 
 echo -e "${CYAN}Installing Subfinder\n${NORMAL}"
-GO111MODULE=on go get -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
+go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 sudo cp ~/go/bin/subfinder /usr/local/bin 
 
 echo -e "${CYAN}Installing Hakrawler\n${NORMAL}"
@@ -152,52 +152,52 @@ go install github.com/hakluke/hakrawler@latest
 sudo cp ~/go/bin/hakrawler /usr/local/bin 
 
 echo -e "${CYAN}Installing anew\n${NORMAL}"
-go get -u github.com/tomnomnom/anew
+go install github.com/tomnomnom/anew@latest
 sudo cp ~/go/bin/anew /usr/local/bin 
 
 echo -e "${CYAN}Installing HTTPX\n${NORMAL}"
-GO111MODULE=on go get -v github.com/projectdiscovery/httpx/cmd/httpx
+go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 sudo cp ~/go/bin/httpx /usr/local/bin
 
 echo -e "${CYAN}Installing Notify\n${NORMAL}"
-GO111MODULE=on go get -v github.com/projectdiscovery/notify/cmd/notify
+go install github.com/projectdiscovery/notify/cmd/notify@latest
 sudo cp ~/go/bin/notify /usr/local/bin
 
 echo -e "${CYAN}Installing Nuclei\n${NORMAL}"
-GO111MODULE=on go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 sudo cp ~/go/bin/nuclei /usr/local/bin
 
 echo -e "${CYAN}Installing Shcheck\n${NORMAL}"
 git clone https://github.com/santoru/shcheck
 
 echo -e "${CYAN}Installing MailSpoof\n${NORMAL}"
-sudo pip3 install mailspoof
+pip3 install mailspoof
 
 echo -e "${CYAN}Installing MailSpoof\n${NORMAL}"
-go get github.com/haccer/subjack
+go install github.com/haccer/subjack@install
 sudo cp ~/go/bin/subjack /usr/local/bin
 
 echo -e "${CYAN}Installing gau\n${NORMAL}"
-GO111MODULE=on go get -u -v github.com/lc/gau
+go install github.com/lc/gau@latest
 sudo cp ~/go/bin/gau /usr/local/bin
 
 echo -e "${CYAN}Installing gf\n${NORMAL}"
-go get -u github.com/tomnomnom/gf
+go install -u github.com/tomnomnom/gf@latest
 echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
 cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
 sudo cp ~/go/bin/gf /usr/local/bin
 
 echo -e "${CYAN}Installing qsreplace\n${NORMAL}"
-go get -u github.com/tomnomnom/qsreplace
+go install github.com/tomnomnom/qsreplace@latest
 sudo cp ~/go/bin/qsreplace /usr/local/bin
 
 echo -e "${CYAN}Installing Dalfox\n${NORMAL}"
-GO111MODULE=on go get -v github.com/hahwul/dalfox/v2
+go install github.com/hahwul/dalfox/v2@latest
 sudo cp ~/go/bin/dalfox /usr/local/bin
 
 echo -e "${CYAN}Installing html-tool\n${NORMAL}"
-go get -u github.com/tomnomnom/hacks/html-tool
+go install github.com/tomnomnom/hacks/html-tool@latest
 sudo cp ~/go/bin/html-tool /usr/local/bin
 
 echo -e "${CYAN}Installing waybackurls\n${NORMAL}"
-go get github.com/tomnomnom/waybackurls
+go install github.com/tomnomnom/waybackurls@latest
